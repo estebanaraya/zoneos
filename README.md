@@ -5,7 +5,7 @@
 ![The Gen 3 HUD in play](img/zos-gen3.jpg)
 
 Your PDA sets the tier. Find a better one and the whole interface steps up with it: the PDA screen, the map, the inventory,
-trading and crafting, and the HUD if you want it to. ZoneOS was PDA Redesign up to 0.4.0-alpha.
+trading and crafting, and the HUD if you want it to.
 
 - **The manual at a glance:** [ZoneOS_Manual_0.5.0-alpha.pdf](ZoneOS_Manual_0.5.0-alpha.pdf)
 - **Download:** [Releases](https://github.com/estebanaraya/zoneos/releases)
@@ -25,7 +25,7 @@ Built on the CLIKRΔD ROMEO list and checked against plain G.A.M.M.A.: nothing e
 ## Install
 
 1. Install the zip with MO2.
-2. Place it low in the load order, below G.A.M.M.A.'s UI mods. The folder is `Z_PDA_Redesign`; it keeps its old name.
+2. Place it low in the load order, below G.A.M.M.A.'s UI mods. The folder is `Z_PDA_Redesign`.
 3. Start the game. Settings live in the PDA (Profile, Settings), in MCM, and in the HUD editor.
 
 ## The four tiers
@@ -121,24 +121,10 @@ MSAA off; the DX11 rows below need DX11.
 
 Each fallback logs one `[pdar]` line. CRT and the round HUD map need any bus.
 
-## Coming from PDA Redesign 0.4.0
+## Coming later
 
-**Saves.** ZoneOS adds no items, so a 0.4.0 save loaded with ZoneOS alone loses what 0.4.0 added: its hardware items,
-fitted visor modules and installed thermal modules. The save still loads.
-
-- To keep the items, enable the uninstall stub, `Z_PDA_Redesign_Uninstall_Stub`, beside ZoneOS. It holds each one as an
-  inert "(mod removed)" item, and a binocular keeps its rangefinder. It can stay on with ZoneOS; never enable it with
-  PDA Redesign 0.4.0 or with the hardware add-on. It is not in this package: ask for it in the issues.
-- Fitted visor modules exist only in the save's record. To keep them, press Prepare for uninstall in 0.4.0 first: it puts
-  every fitted module back in your bag, where the stub keeps it. Installed thermal modules cannot be kept either way.
-
-**Presets show Custom.** After upgrading, the Presets page shows Custom until you pick one. 0.4.0 stored "Skip what
-devices show" (now Follow Wearable Devices) as on, MCM keeps every key, and ZoneOS defaults it off, so your settings match
-no preset. Your value is kept; picking a preset sets everything, that row included.
-
-**The hardware add-on.** The binocular tiers, visor modules and headset, thermal modules, the C-Consciousness module and
-world marks on people move to a separate hardware add-on, a later download. Without it the binoculars are G.A.M.M.A.'s
-own.
+A separate hardware add-on: AR visor modules and a headset that tie the HUD to your gear, thermal modules, binocular tiers,
+the C-Consciousness module and world marks on people. Until then the binoculars are G.A.M.M.A.'s own.
 
 ## Known issues
 
