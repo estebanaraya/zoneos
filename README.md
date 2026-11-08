@@ -139,7 +139,6 @@ the C-Consciousness module and world marks on people. Until then the binoculars 
   drop it on the box away from the chip.
 - Most in-game checking was at 4K. A full 1080p and 1440p pass is still to run.
 - The Russian text is machine-translated and unreviewed.
-- Dragging in the HUD editor, and wheel and drag on the Map in the 3D PDA, have not been confirmed with a real mouse.
 - Mods outside the ROMEO list may interact in ways we have not seen. Tell us in the issues.
 
 ## Credits
