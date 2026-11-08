@@ -32,8 +32,8 @@ Built on the CLIKRΔD ROMEO list and checked against plain G.A.M.M.A.: nothing e
 
 | Tier | PDA | HUD (with Follow PDA) | Screen, map and menus |
 | --- | --- | --- | --- |
-| 1 | PDA 1, or none | Gen 1: one ink | Phosphor, green or amber |
-| 2 | KilTrak v2.0 | Gen 2: phosphor | E-paper, paper white or paper black |
+| 1 | PDA 1, or none | Gen 2: phosphor | Phosphor, green or amber |
+| 2 | KilTrak v2.0 | Gen 1: one ink | E-paper, paper white or paper black |
 | 3 | v3.1 | Gen 3: full colour | Advanced: the PROMIN look of Wearable Devices, with CRT |
 | 4 | Milspec | Gen 4: a lighter ink | Advanced, as v3.1, with an optional night look while NV is on |
 
@@ -130,6 +130,7 @@ the C-Consciousness module and world marks on people. Until then the binoculars 
 
 - Performance: the HUD costs 0.3 to 0.7 ms a frame while on (budget 0.2 ms); the inventory and map up to 2.3 ms a frame at
   1080p while open. Fixes are in progress.
+- After you equip a different PDA, the PDA's screen or its map can keep the previous PDA's look until you reload the save.
 - The Gen 4 name tag draws fainter than at Gen 2 and Gen 3 and is easy to miss on a dark scene.
 - Notifications switch on the next load; the other elements switch live.
 - Map icons: on wide screens the PDA map draws the game's icons at their true place. An icon wholly under another is not
