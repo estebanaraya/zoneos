@@ -1,15 +1,39 @@
 # ZoneOS
 
-**HUD, UI and PDA overhaul for S.T.A.L.K.E.R. Anomaly and G.A.M.M.A.** 0.5.0-alpha, a public alpha for testing.
+**HUD, UI and PDA overhaul for S.T.A.L.K.E.R. Anomaly and G.A.M.M.A.** 0.5.1-alpha, a public alpha for testing.
 
 ![The Gen 3 HUD in play](img/zos-gen3.jpg)
 
 Your PDA sets the tier. Find a better one and the whole interface steps up with it: the PDA screen, the map, the inventory,
 trading and crafting, and the HUD if you want it to.
 
-- **The manual at a glance:** [ZoneOS_Manual_0.5.0-alpha.pdf](ZoneOS_Manual_0.5.0-alpha.pdf)
+- **The manual at a glance:** [ZoneOS_Manual_0.5.0-alpha.pdf](ZoneOS_Manual_0.5.0-alpha.pdf) (written for 0.5.0)
 - **Download:** [Releases](https://github.com/estebanaraya/zoneos/releases)
 - **Bugs and ideas:** [Issues](https://github.com/estebanaraya/zoneos/issues)
+
+## What's new in 0.5.1-alpha
+
+- **Fewer crashes:** opening the PDA after a load, taking a Wearable Devices device off in the inventory, and switching
+  screens just after an e-paper page flash
+- **The Map follows your PDA:** a new PDA's look applies at once, with no reload
+- **Start on:** the PDA key opens Home, the Map or the Last screen you were on (Settings, PDA look, More)
+- **One box per equipment kind:** the Knife, Sidearm and Binoculars boxes take only their own kind; a wrong drop goes to
+  the item's own box
+- **More weapon chips:** canted sights, tactical lights, weapon kits and speed loaders. Drop a part on its chip to fit it,
+  right-click the chip to take it off
+- **Preview before you use:** hover food, medicine or an artefact and the Condition and Protection rows show what it would
+  change
+- **Needs read like the game:** hunger, thirst and sleep count up to 100 at the game's red indicator
+- **Item effects read right:** bad effects red, good ones green, with the game's signs; parts show their condition dots
+- **Stacks:** every cell in the stack picker has its hover card; Group by type rows no longer overlap
+- **People by standing:** hostiles are diamonds, allies circles, neutrals squares, on every map and the minimap
+- **The HUD is ZoneOS's own:** the game's HUD toggle no longer hides it; its switch in Settings, HUD does
+- **Faction themes:** Theme (Settings, PDA look) gives the Advanced and Phosphor screens and the inventory Promin's colours
+  or a faction's (12 to pick from, by emblem)
+- **CRT on Phosphor:** the CRT switch darkens the Phosphor screen's edges, with a glow on the raised PDA under shader bus v8;
+  the Advanced screen's scanlines are gone
+
+The full list is in `README.md` in the zip.
 
 ## Requirements
 
@@ -32,9 +56,9 @@ Built on the CLIKRΔD ROMEO list and checked against plain G.A.M.M.A.: nothing e
 
 | Tier | PDA | HUD (with Follow PDA) | Screen, map and menus |
 | --- | --- | --- | --- |
-| 1 | PDA 1, or none | Gen 2: phosphor | Phosphor, green or amber |
+| 1 | PDA 1, or none | Gen 2: phosphor | Phosphor, green or amber, with CRT edge darkening |
 | 2 | KilTrak v2.0 | Gen 1: one ink | E-paper, paper white or paper black |
-| 3 | v3.1 | Gen 3: full colour | Advanced: the PROMIN look of Wearable Devices, with CRT |
+| 3 | v3.1 | Gen 3: full colour | Advanced: the PROMIN look of Wearable Devices |
 | 4 | Milspec | Gen 4: a lighter ink | Advanced, as v3.1, with an optional night look while NV is on |
 
 The HUD starts on Gen 3. Set HUD style (Settings, HUD, How it looks) to Follow PDA to tie it to the PDA you carry, or pick
@@ -55,8 +79,10 @@ any look and keep it. Each look has its own boot sequence and its own critical-v
   swap), an item on an empty Belt box. With SOTA, a consumable on Ready box N sets its key
 - A hint says why when a drop does not fit
 - Equipment pane with the Wearable Devices slots (Forearm, Wrist, Bracer, Patch, Side)
-- Weapon chips: magazines (Mags Reloaded) and fitted addons on the weapon boxes
-- A sidearm box; with two primaries, the knife key twice draws the sidearm
+- Weapon chips: magazines (Mags Reloaded), canted sights, tactical lights, weapon kits and speed loaders, fitted by drop and
+  removed by right-click
+- Knife, Sidearm and Binoculars boxes take only their own kind; with two primaries, the knife key twice draws the sidearm
+- Hover a consumable or artefact to preview what it would change
 - Chest rigs: the plate sits in the rig, med pockets, and SOTA rigs, pouches and Ready supplies in the same look
 - Item details: a floating two-column sheet with attachments, the upgrade tree and a rig's pocket layout
 - Trade sets apart what the trader will not buy
@@ -70,7 +96,8 @@ any look and keep it. Each look has its own boot sequence and its own critical-v
 
 ### HUD
 
-- A HUD in place of the game's own, on its own switch: no PDA, charge or headgear needed
+- A HUD in place of the game's own, on its own switch: no PDA, charge or headgear needed, and the game's HUD toggle does
+  not hide it
 - HUD style: Gen 1, Gen 2, Gen 3, Gen 4, or Follow PDA, plus an intensity setting
 - Every part its own switch: bars, status chips, full messages, quick slot icons, long hints, limb hit points, map marks
   and their colours, squads on the map, name and rank on the ID line
@@ -86,7 +113,8 @@ any look and keep it. Each look has its own boot sequence and its own critical-v
 
 - Every page redrawn: Home, Tasks, Map, People, Messages, Guide, Radio, Profile and Settings
 - Map: filters, pan, zoom, Centre on player, a right-click menu; zoom and pan stop at the world edge
-- Level exits as chevrons; clicking a spot on a preview opens the Map on it
+- Faction themes picked by emblem; Start on: Home, Map or Last screen
+- Level exits as one exit icon; clicking a spot on a preview opens the Map on it
 - Text size: Smaller, Default or Large. Icon style: Pixel (the default) or Line
 - Every setting in the PDA's Settings, MCM and the HUD editor; every key on Controls
 - Talk window and use prompt in the PROMIN look, with GFY faces
@@ -119,7 +147,7 @@ MSAA off; the DX11 rows below need DX11.
 | 3D PDA sun glare | Glint on the glass | None |
 | Weapon menu light | Masked by hands and weapon | Depth cut at 1.2 m |
 
-Each fallback logs one `[pdar]` line. CRT and the round HUD map need any bus.
+Each fallback logs one `[pdar]` line. The round HUD map needs any bus; the glow on the raised Phosphor PDA needs bus v8.
 
 ## Coming later
 
@@ -130,14 +158,18 @@ the C-Consciousness module and world marks on people. Until then the binoculars 
 
 - Performance: the HUD costs 0.3 to 0.7 ms a frame while on (budget 0.2 ms); the inventory and map up to 2.3 ms a frame at
   1080p while open. Fixes are in progress.
-- After you equip a different PDA, the PDA's screen or its map can keep the previous PDA's look until you reload the save.
+- A modpack update reset one player's ZoneOS settings to their defaults; the cause is not found. After updating, check
+  Settings.
+- Item details for a weapon lists fewer attachments than its hover card, shows a stray row under the picture, and its
+  description can overlap the properties.
+- In one play test the first PDA open after a load showed the game's own PDA. A fix is in 0.5.1; tell us if you see it.
 - The Gen 4 name tag draws fainter than at Gen 2 and Gen 3 and is easy to miss on a dark scene.
 - Notifications switch on the next load; the other elements switch live.
 - Map icons: on wide screens the PDA map draws the game's icons at their true place. An icon wholly under another is not
   drawn, and one just past the edge may not show.
 - Inventory drag and drop: a drop on one of an equipment box's small chips is refused unless the item goes in that chip;
   drop it on the box away from the chip.
-- Most in-game checking was at 4K. A full 1080p and 1440p pass is still to run.
+- In-game checks ran at 4K and 1080p. 1440p, 4:3, 16:10 and Russian have not been re-run for ZoneOS.
 - The Russian text is machine-translated and unreviewed.
 - Mods outside the ROMEO list may interact in ways we have not seen. Tell us in the issues.
 
@@ -146,7 +178,7 @@ the C-Consciousness module and world marks on people. Until then the binoculars 
 This is an alpha and the credits are still being completed. If your work is missing or credited wrongly, tell us in the
 issues.
 
-- **Wearable Devices:** Sulik, Jeremussy, Wiarubane. Used with their permission (2026-10-16): the CRT pattern, the stat
+- **Wearable Devices:** Sulik, Jeremussy, Wiarubane. Used with their permission (2026-10-16): the CRT edge fade, the stat
   rule `get_state` and the BIO body silhouette. Everything else of Wearable Devices is read at run time, not copied.
 - **S.T.A.L.K.E.R. Anomaly:** the Anomaly team, on GSC Game World's engine and assets.
 - **G.A.M.M.A.:** Grokitach and the G.A.M.M.A. team. MCM, SortingPlus and Encyclopedia Messages Restored: RavenAscendant.
