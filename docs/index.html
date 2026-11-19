@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>zoneOS: HUD, UI, and PDA overhaul 0.5.1-alpha</title>
+<link rel="stylesheet" href="manual.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="web.css" media="screen">
+<link rel="stylesheet" href="zoneos.css">
+</head>
+<body>
+<nav class="webbar"><span class="name">zoneOS guide</span><a href="https://github.com/estebanaraya/zoneos/releases">Download the release</a><a href="https://github.com/estebanaraya/zoneos/issues">Report an issue</a><a href="https://github.com/estebanaraya/zoneos">Repository</a></nav>
+
+<section class="first cover lead-logo">
+  <img class="logo" src="img/zos-logo.png" alt="zoneOS">
+  <h1>HUD, UI, and PDA overhaul</h1>
+  <p class="sub">0.5.1-alpha · public alpha for testing · 2026-11-19</p>
+  <p class="lead big">Your HUD and interfaces evolve as you upgrade your PDA, giving a fresh experience as you progress. If you want to keep a specific look, you can always go into the settings and customize it exactly the way you want it.</p>
+  <div class="hero">
+    <figure><img class="on-screen" src="img/zos-startup-anim.gif" alt="The zoneOS start animation"><img class="on-print" src="img/zos-startup.jpg" alt=""><figcaption><b>The start animation</b></figcaption></figure>
+    <figure><img src="img/zos-themes-pda.jpg" alt=""><figcaption><b>Unique themes per faction</b> Promin at PDA 1 to 4, then Clear Sky and Duty</figcaption></figure>
+  </div>
+</section>
+
+<section class="full">
+  <h2>The HUD evolves with your PDA</h2>
+  <p class="lead">Gen 1 phosphor, Gen 2 smoked glass, Gen 3 dark glass, Gen 4 clear glass, top to bottom. HUD style is Follow PDA by default; pick one look to keep it.</p>
+  <img src="img/zos-hud-tiers.jpg" alt="">
+</section>
+
+<section class="full">
+  <h2>Themes on the HUD</h2>
+  <p class="lead">Your faction by default, or Promin, ROMEO or one of 12 factions. Gen 1 under Duty, Freedom, Ecologist and ROMEO.</p>
+  <img src="img/zos-themes-hud.jpg" alt="">
+</section>
+
+<section>
+  <h2>HUD looks</h2>
+  <p class="lead">Each row: the whole frame, the clock and bars, the vitals when low, the minimap. Promin theme.</p>
+  <div class="row"><div class="lbl">Gen 1</div><div class="grid g4">
+    <figure><img src="img/zos-gen1.jpg" alt=""><figcaption><b>PDA 1, or none</b> phosphor on black</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.86;--w:.14;--h:.14"><img src="img/zos-gen1.jpg" alt=""></div><figcaption>Clock and bars</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.7;--w:.28;--h:.28"><img src="img/zos-gen1-low.jpg" alt=""></div><figcaption>Vitals low</figcaption></figure>
+    <figure><div class="crop" style="--x:.74;--y:.72;--w:.26;--h:.26"><img src="img/zos-gen1.jpg" alt=""></div><figcaption>Minimap as a phosphor poster</figcaption></figure>
+  </div></div>
+  <div class="row"><div class="lbl">Gen 2</div><div class="grid g4">
+    <figure><img src="img/zos-gen2.jpg" alt=""><figcaption><b>KilTrak v2.0</b> tinted smoked glass</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.86;--w:.14;--h:.14"><img src="img/zos-gen2.jpg" alt=""></div><figcaption>Clock and bars</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.7;--w:.28;--h:.28"><img src="img/zos-gen2-low.jpg" alt=""></div><figcaption>Vitals low</figcaption></figure>
+    <figure><div class="crop" style="--x:.74;--y:.72;--w:.26;--h:.26"><img src="img/zos-gen2.jpg" alt=""></div><figcaption>Minimap, grey in the glass tint</figcaption></figure>
+  </div></div>
+  <div class="row"><div class="lbl">Gen 3</div><div class="grid g4">
+    <figure><img src="img/zos-gen3.jpg" alt=""><figcaption><b>v3.1</b> dark neutral glass</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.86;--w:.14;--h:.14"><img src="img/zos-gen3.jpg" alt=""></div><figcaption>Clock and bars</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.7;--w:.28;--h:.28"><img src="img/zos-gen3-low.jpg" alt=""></div><figcaption>Vitals low: the warning colours</figcaption></figure>
+    <figure><div class="crop" style="--x:.74;--y:.72;--w:.26;--h:.26"><img src="img/zos-gen3.jpg" alt=""></div><figcaption>Minimap in colour</figcaption></figure>
+  </div></div>
+  <div class="row"><div class="lbl">Gen 4</div><div class="grid g4">
+    <figure><img src="img/zos-gen4.jpg" alt=""><figcaption><b>Milspec</b> clear glass in white</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.86;--w:.14;--h:.14"><img src="img/zos-gen4.jpg" alt=""></div><figcaption>Clock and bars</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.7;--w:.28;--h:.28"><img src="img/zos-gen4-low.jpg" alt=""></div><figcaption>Vitals low</figcaption></figure>
+    <figure><div class="crop" style="--x:.74;--y:.72;--w:.26;--h:.26"><img src="img/zos-gen4.jpg" alt=""></div><figcaption>Minimap in colour</figcaption></figure>
+  </div></div>
+</section>
+
+<section class="full">
+  <h2>The start animation</h2>
+  <p class="lead">At a full HUD startup the zoneOS mark builds itself over the crosshair in the look of your PDA. Under the ROMEO theme the ROMEO takeover plays instead.</p>
+  <img src="img/zos-startup.jpg" alt="">
+</section>
+
+<section>
+  <h2>PDA screens</h2>
+  <p class="lead">The screen follows the PDA you carry. Home, Promin theme.</p>
+  <div class="grid g4">
+    <figure><img src="img/zos-scr-green.jpg" alt=""><figcaption><b>PDA 1</b> Phosphor, green</figcaption></figure>
+    <figure><img src="img/zos-scr-amber.jpg" alt=""><figcaption><b>PDA 1</b> Phosphor, amber</figcaption></figure>
+    <figure><img src="img/zos-scr-paper-white.jpg" alt=""><figcaption><b>KilTrak v2.0</b> E-paper, paper white</figcaption></figure>
+    <figure><img src="img/zos-scr-paper-black.jpg" alt=""><figcaption><b>KilTrak v2.0</b> E-paper, paper black</figcaption></figure>
+    <figure><img src="img/zos-scr-colour-white.jpg" alt=""><figcaption><b>v3.1</b> Colour e-paper, white</figcaption></figure>
+    <figure><img src="img/zos-scr-colour-black.jpg" alt=""><figcaption><b>v3.1</b> Colour e-paper, black</figcaption></figure>
+    <figure><img src="img/zos-scr-oled.jpg" alt=""><figcaption><b>Milspec</b> OLED: true black, full colour</figcaption></figure>
+    <figure><img src="img/zos-scr-night.jpg" alt=""><figcaption><b>Milspec</b> night look, in green</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Themes</h2>
+  <p class="lead">Theme (Settings, PDA look) colours the PDA, the HUD and the inventory, on every screen but night vision. Promin across the four PDAs, then Clear Sky and Duty.</p>
+  <div class="grid g4">
+    <figure><img src="img/zos-scr-green.jpg" alt=""><figcaption><b>Promin</b> PDA 1</figcaption></figure>
+    <figure><img src="img/zos-scr-paper-white.jpg" alt=""><figcaption><b>Promin</b> KilTrak v2.0</figcaption></figure>
+    <figure><img src="img/zos-scr-colour-black.jpg" alt=""><figcaption><b>Promin</b> v3.1</figcaption></figure>
+    <figure><img src="img/zos-scr-oled.jpg" alt=""><figcaption><b>Promin</b> Milspec</figcaption></figure>
+  </div>
+  <div class="grid g2" style="margin-top:12px">
+    <figure><img src="img/zos-theme-csky.jpg" alt=""><figcaption><b>Clear Sky</b></figcaption></figure>
+    <figure><img src="img/zos-theme-duty-phosphor.jpg" alt=""><figcaption><b>Duty</b></figcaption></figure>
+  </div>
+  <div class="grid g4" style="margin-top:12px">
+    <figure><img src="img/zos-inv-duty.jpg" alt=""><figcaption><b>Duty</b> loot on Gen 2 glass</figcaption></figure>
+    <figure><img src="img/zos-trade-romeo.jpg" alt=""><figcaption><b>ROMEO</b> trade on Gen 4 glass</figcaption></figure>
+    <figure><div class="crop" style="--x:.25;--y:.2;--w:.6;--h:.6"><img src="img/zos-set-look.jpg" alt=""></div><figcaption><b>Settings, PDA look</b> Theme by emblem, Screen, Text size, Task colour</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Inventory glass</h2>
+  <p class="lead">Inventory, trade and loot are see-through glass over the game, in the look of your PDA. Flat is a choice in Settings, Inventory.</p>
+  <div class="grid g3">
+    <figure><img src="img/zos-inv-gen1.jpg" alt=""><figcaption><b>Gen 1</b> phosphor on black</figcaption></figure>
+    <figure><img src="img/zos-inv-gen2.jpg" alt=""><figcaption><b>Gen 2</b> smoked glass</figcaption></figure>
+    <figure><img src="img/zos-inv-gen3.jpg" alt=""><figcaption><b>Gen 3</b> dark glass</figcaption></figure>
+    <figure><img src="img/zos-inv-gen4.jpg" alt=""><figcaption><b>Gen 4</b> tinted, etched frame</figcaption></figure>
+    <figure><img src="img/zos-trade.jpg" alt=""><figcaption><b>Trade</b> Sellable and Not for sale set apart</figcaption></figure>
+    <figure><img src="img/zos-inv-flat.jpg" alt=""><figcaption><b>Flat</b></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>The new inventory</h2>
+  <p class="lead">Built-in support for rigs, battle belts, and magazines, with Mags Reloaded, AMP and Minimal SOTA+ Complete.</p>
+  <div class="grid g3">
+    <figure><img src="img/zos-inv-gen3.jpg" alt=""><figcaption><b>Inventory glass</b> loot on Gen 3 glass</figcaption></figure>
+    <figure><img src="img/zos-inv-mags.jpg" alt=""><figcaption><b>Magazines</b> their rounds and the ammo type of the round on top</figcaption></figure>
+    <figure><img src="img/zos-inv-band.jpg" alt=""><figcaption><b>Battle belt and rig</b> the belt's box and pouch boxes, Belt slots, Ready supplies with F1 to F4, the rig's Plate and Pouch boxes and its pockets</figcaption></figure>
+    <figure><img src="img/zos-inv-pouch.jpg" alt=""><figcaption><b>A pouch on the belt</b> dropped on its box</figcaption></figure>
+    <figure><img src="img/zos-inv-mag-card.jpg" alt=""><figcaption><b>Magazine card</b> Loaded rounds and Round on top</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Inventory, trade, loot</h2>
+  <p class="lead">Frames from 0.4.0-alpha (2026-11-05): the functions stand, the look has changed.</p>
+  <div class="grid g3">
+    <figure><img src="img/inv-fold.jpg" alt=""><figcaption><b>Backpack accordion</b> while looting</figcaption></figure>
+    <figure><img src="img/inv-drop.jpg" alt=""><figcaption><b>Drops onto equipment</b> module on Promin, filter on helmet, scope swap</figcaption></figure>
+    <figure><img src="img/inv-details.jpg" alt=""><figcaption><b>Item details</b> with the upgrade tree</figcaption></figure>
+    <figure><img src="img/inv-rig.jpg" alt=""><figcaption><b>Rig preview</b> in item details</figcaption></figure>
+    <figure><img src="img/inv-card.jpg" alt=""><figcaption><b>Item details sheet</b></figcaption></figure>
+    <figure><img src="img/tr-loot-details.jpg" alt=""><figcaption><b>Item details</b> while looting</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>PDA pages</h2>
+  <p class="lead">Home is a 0.5.1 capture; the other pages are 0.4.0-alpha frames (2026-11-05) in that build's look.</p>
+  <div class="grid g4">
+    <figure><img src="img/zos-scr-oled.jpg" alt=""><figcaption><b>Home</b></figcaption></figure>
+    <figure><img src="img/pg-tasks.jpg" alt=""><figcaption><b>Tasks</b></figcaption></figure>
+    <figure><img src="img/pg-map.jpg" alt=""><figcaption><b>Map</b> levels and world</figcaption></figure>
+    <figure><img src="img/pg-people.jpg" alt=""><figcaption><b>People</b></figcaption></figure>
+    <figure><img src="img/pg-messages.jpg" alt=""><figcaption><b>Messages</b></figcaption></figure>
+    <figure><img src="img/pg-guide.jpg" alt=""><figcaption><b>Guide</b></figcaption></figure>
+    <figure><img src="img/pg-radio.jpg" alt=""><figcaption><b>Radio</b></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>HUD editor</h2>
+  <p class="lead">Drag each HUD cluster; every HUD setting on its tabs: Layout, Look, ID line, More, Parts and Controls. Open it from MCM or from Profile, Settings, HUD.</p>
+  <div class="grid g4">
+    <figure><div class="crop" style="--x:.575;--y:.15;--w:.415;--h:.6"><img src="img/zos-ed-layout.jpg" alt=""></div><figcaption><b>Layout</b> switch, anchor, offsets, scale, opacity</figcaption></figure>
+    <figure><div class="crop" style="--x:.575;--y:.15;--w:.415;--h:.6"><img src="img/zos-ed-look.jpg" alt=""></div><figcaption><b>Look</b> HUD style, Startup, Lens, Afterglow</figcaption></figure>
+    <figure><div class="crop" style="--x:.575;--y:.15;--w:.415;--h:.6"><img src="img/zos-ed-ident.jpg" alt=""></div><figcaption><b>ID line</b> names, rank, identification time</figcaption></figure>
+    <figure><div class="crop" style="--x:.575;--y:.15;--w:.415;--h:.6"><img src="img/zos-ed-parts.jpg" alt=""></div><figcaption><b>Parts</b> each part of an element on or off</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Crafting and bench</h2>
+  <p class="lead">One grid for every workshop mode, Available only, search; repair and upgrade trees on the same window.</p>
+  <div class="grid g4">
+    <figure><img src="img/zos-craft.jpg" alt=""><figcaption><b>Craft</b> the grid, the components and the toolkit</figcaption></figure>
+    <figure><img src="img/zos-craft-upgrade.jpg" alt=""><figcaption><b>Upgrade</b> the tree with path lines and kit art</figcaption></figure>
+    <figure><img src="img/zos-craft-repair.jpg" alt=""><figcaption><b>Repair</b> replacement parts</figcaption></figure>
+    <figure><img src="img/zos-craft-search.jpg" alt=""><figcaption><b>Search</b> recipes by name</figcaption></figure>
+    <figure><img src="img/cr-available.jpg" alt=""><figcaption><b>Available only</b></figcaption></figure>
+    <figure><img src="img/cr-search.jpg" alt=""><figcaption><b>Search</b> a component</figcaption></figure>
+    <figure><img src="img/cr-bench.jpg" alt=""><figcaption><b>Portable workshop</b></figcaption></figure>
+    <figure><img src="img/cr-cook.jpg" alt=""><figcaption><b>Cooking</b></figcaption></figure>
+    <figure><img src="img/cr-mend.jpg" alt=""><figcaption><b>Mending</b></figcaption></figure>
+    <figure><img src="img/cr-melt.jpg" alt=""><figcaption><b>Artefact melter</b></figcaption></figure>
+    <figure><img src="img/cr-repair.jpg" alt=""><figcaption><b>Repair</b></figcaption></figure>
+    <figure><img src="img/cr-box.jpg" alt=""><figcaption><b>Workshop prompt</b></figcaption></figure>
+    <figure><img src="img/cr-sheet.jpg" alt=""><figcaption><b>Recipe book</b></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Wearable Devices</h2>
+  <p class="lead">Turn on Follow Wearable Devices (off by default) and each HUD element draws only while a device reads it. Frames from 0.4.0-alpha (2026-11-05), in its looks of the time.</p>
+  <div class="grid g4">
+    <figure><div class="crop" style="--x:0;--y:.895;--w:.14;--h:.09"><img src="img/mod-bare.jpg" alt=""></div><figcaption><b>Promin, no module</b> clock, health, stamina</figcaption></figure>
+    <figure><div class="crop" style="--x:.86;--y:.76;--w:.14;--h:.24"><img src="img/g3.jpg" alt=""></div><figcaption><b>Navigation Unit</b> the minimap</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.795;--w:.18;--h:.19"><img src="img/mod-side.jpg" alt=""></div><figcaption><b>Environmental Module</b> hazard rows</figcaption></figure>
+    <figure><div class="crop" style="--x:0;--y:.9;--w:.14;--h:.075"><img src="img/g4.jpg" alt=""></div><figcaption><b>Ulman's Watch worn</b> bars, no HUD clock</figcaption></figure>
+  </div>
+  <table style="margin-top:4mm">
+    <tr><th>HUD element</th><th>Read by</th></tr>
+    <tr><td>Clock</td><td>Promin, Vektor or Ulman's Watch</td></tr>
+    <tr><td>Vitals and limbs</td><td>Promin or Vektor</td></tr>
+    <tr><td>Hazards</td><td>Environmental Module, Vektor-2M or a Geiger</td></tr>
+    <tr><td>Compass</td><td>Navigation Unit or Vektor</td></tr>
+    <tr><td>Minimap</td><td>Navigation Unit</td></tr>
+    <tr><td>Notifications</td><td>Promin</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>The HUD while zoomed</h2>
+  <p class="lead">The HUD steps aside while you look through a zoomed rangefinder, and comes back when you lower it. 2026-11-07, the HUD in its look of that build.</p>
+  <div class="grid g2">
+    <figure><img src="img/zos-zoom-held.jpg" alt=""><figcaption><b>KILO5K in hand</b> the HUD draws</figcaption></figure>
+    <figure><img src="img/zos-zoom-on.jpg" alt=""><figcaption><b>Zoomed</b> the HUD is hidden</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Reference: features</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>Inventory, trade, loot</h3>
+      <ul class="check">
+        <li>Search as the last Sort tab; in stashes one field searches both panes</li>
+        <li>Type filters; Group by type, stashes too (off by default)</li>
+        <li>Move all and Take all also take folded items; total carry weight under every Sort tab</li>
+        <li>Right-click works on every box; refusal hints when a drop does not fit</li>
+        <li>Drop onto equipment: a module on the Promin, a filter or tank on the helmet or Air box, a scope on a scoped weapon (they swap), an item on an empty Belt box</li>
+        <li>Patches as attachments: drop a patch on its torn outfit to sew it on</li>
+        <li>Equipment pane with the WD slots (Forearm, Wrist, Bracer, Patch, Side)</li>
+        <li>One box per equipment kind; with two primaries the knife key twice draws the sidearm</li>
+        <li>Weapon chips: canted sights (3DSS), tactical lights, weapon kits and Mags Reloaded speed loaders</li>
+        <li>Magazines show their rounds and the round on top; the loadout is one block of pockets, counted by size</li>
+        <li>Chest rigs: Plate and pouches as boxes beside the rig; pockets turn square only when they would scroll</li>
+        <li>Battle belt: its own box with its pouch boxes, Belt slots, one Ready supplies row</li>
+        <li>Item details: floating two-column sheet, Attachments, upgrade tree, a rig's pocket layout</li>
+        <li>Preview before you use: hover a consumable or an artefact to see what it would change</li>
+        <li>Panes fill their space; on ultrawide the frame keeps its 16:9 width at the right edge</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>HUD, PDA and settings</h3>
+      <ul class="check">
+        <li>A HUD in place of the game's own, on its own switch: no PDA, charge or headgear needed</li>
+        <li>HUD style: Gen 1, Gen 2, Gen 3, Gen 4, or Follow PDA (the default: PDA 1 Gen 1, KilTrak Gen 2, v3.1 Gen 3, Milspec Gen 4)</li>
+        <li>Theme: Your faction (the default), Promin, ROMEO or one of 12 factions</li>
+        <li>Screen: Follow PDA by default; Mode, Phosphor and Night pick paper, ink and the night look</li>
+        <li>Every HUD part its own row; Squads on the map By tier by default</li>
+        <li>Name tag of the person you look at</li>
+        <li>Map: filters, pan, zoom, Centre on player, right-click menu; our own marks, or the game's</li>
+        <li>Map mods draw in the look of your screen; Map style Colour shows them as shipped</li>
+        <li>Start on: Home, the Map or the Last screen</li>
+        <li>Text size: Smaller, Default or Large. Icon style: Pixel or Line</li>
+        <li>Settings pages as cards; every setting in the PDA, MCM and the HUD editor in the same words</li>
+        <li>Presets: Default, PROMIN Hardcore, Unrestricted</li>
+        <li>Quick slots fade 4 s after use, or Always shown</li>
+        <li>Talk window and use prompt in the PROMIN look</li>
+        <li>One crafting grid for every workshop mode; bench upgrade trees with path lines</li>
+        <li>Prepare for uninstall: one press readies a save</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Reference: setup</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>Needs</h3>
+      <ul>
+        <li>Modded Exes 2026.10.11 or later (the installer's own exes are older and lack the map widget; below it the mod switches itself off).</li>
+        <li>G.A.M.M.A. (installer 920), WD 0.9.2 or later (required), DX10 or DX11.</li>
+        <li>The PBR engine build (maka-pbr-test) runs the mod; clear the shader cache when you switch engines. Modded Exes with shader bus 7: everything runs, the bus 8 effects fall back. PR 805 (bus v8): everything, on DX10/DX11 with MSAA off; the DX11 rows need DX11.</li>
+        <li>Install <code>Z_PDA_Redesign</code> low in MO2, below G.A.M.M.A.'s UI mods. zoneOS was PDA Redesign up to 0.4.0-alpha, and the folder keeps its name.</li>
+      </ul>
+      <h3>Bus 8 effects and their fallback</h3>
+      <table>
+        <tr><th>Effect</th><th>PR 805 (bus v8)</th><th>PBR, Modded Exes (bus 7)</th></tr>
+        <tr><td>HUD light (DX11)</td><td>Follows the world behind it</td><td>Fixed</td></tr>
+        <tr><td>3D PDA sun glare</td><td>Glint on the glass</td><td>None</td></tr>
+        <tr><td>Weapon menu light</td><td>Masked by hands and weapon</td><td>Depth cut at 1.2 m</td></tr>
+        <tr><td>Inventory glass</td><td>Frosts the world behind it</td><td>A fixed frost grain at Gen 4</td></tr>
+      </table>
+      <p class="lead">Each fallback logs one <code>[pdar]</code> line.</p>
+    </div>
+    <div class="card">
+      <h3>Coming from PDA Redesign 0.4.0</h3>
+      <p>zoneOS adds no item, so a save from 0.4.0 loaded with zoneOS alone loses what 0.4.0 added: its hardware items, its fitted visor modules and its installed thermal modules. The save still loads.</p>
+      <p>To keep the items, enable the uninstall stub, <code>Z_PDA_Redesign_Uninstall_Stub</code>, beside zoneOS: it holds each of them as an inert "(mod removed)" item. Never enable it with PDA Redesign 0.4.0. It is not in this package; ask for it in the issues.</p>
+      <p>Fitted visor modules exist only in the save's record, so to keep them, press Prepare for uninstall in 0.4.0 first.</p>
+      <p>Every player upgrading from 0.4.0 sees Custom on the Presets page until they pick a preset: 0.4.0 stored "Skip what devices show" (now "Follow Wearable Devices") as on, and zoneOS defaults it off. Your own value is kept.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Reference: known issues</h2>
+  <div class="cols">
+    <ul>
+      <li><b>Settings after an update</b>. A modpack update reset one player's zoneOS settings to their defaults; the cause is not found. After updating G.A.M.M.A. or your list, check Settings.</li>
+      <li><b>Weapon details</b>. Item details for a weapon lists fewer attachments than its hover card, shows a stray row under the picture, and its description's last line can overlap the properties.</li>
+      <li><b>First open after a load</b>. In one play test the first PDA open after loading a save showed the game's own PDA. Our runs have not seen it again; tell us if you do.</li>
+      <li><b>Performance</b> (budget 0.2 ms): the HUD costs 0.3 to 0.7 ms a frame while it is on; the inventory and the map up to 2.3 ms a frame at 1080p while open. Fixes are in progress.</li>
+      <li><b>Gen 4 name tag</b>. At Gen 4 the name tag of the person under the crosshair draws fainter than at Gen 2 and Gen 3 and is easy to miss on a dark scene.</li>
+      <li><b>Notifications</b> switch on the next load; the other elements switch live.</li>
+    </ul>
+    <ul>
+      <li><b>Map icons</b>: on wide screens the PDA map hides the game's own icons and draws the same icons at their true place. A mark just past the edge of the map may not show.</li>
+      <li><b>Inventory drag and drop</b>: a drop on one of an equipment box's small chips is refused unless the item goes in that chip; drop it on the box away from the chip.</li>
+      <li><b>Inventory notices</b>: the game's own short notices can draw over the inventory's condition rows while it is open.</li>
+      <li><b>Resolutions</b>: in-game checks ran at 4K and at 1920x1080. 1440p, 4:3, 16:10 and Russian have not been checked in game on this build.</li>
+      <li><b>Russian</b>: machine-written, unreviewed.</li>
+      <li><b>Mouse</b>: dragging in the HUD editor and wheel and drag on the Map in the 3D PDA have not been confirmed with a real mouse.</li>
+      <li><b>Saves and uninstall</b>: Prepare for uninstall first; see the README.</li>
+      <li><b>Report</b> what you find: <code>github.com/estebanaraya/zoneos/issues</code>. Releases: <code>github.com/estebanaraya/zoneos/releases</code></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Credits</h2>
+  <p class="lead"><b>Work in progress.</b> This is an initial alpha build, and these credits are still being completed. If your work is missing or credited wrongly, tell us in the issues at <code>github.com/estebanaraya/zoneos/issues</code>.</p>
+  <div class="cols">
+    <div>
+      <ul>
+        <li><b>Wearable Devices</b>: Sulik, Jeremussy, Wiarubane. With their permission (2026-10-16): the CRT pattern, the stat rule <code>get_state</code>, the BIO body silhouette. Everything else of WD is read at run time, not copied.</li>
+        <li><b>S.T.A.L.K.E.R. Anomaly</b>: the Anomaly team, on GSC Game World's engine and assets.</li>
+        <li><b>G.A.M.M.A.</b>: Grokitach and the G.A.M.M.A. team. MCM, SortingPlus and Encyclopedia Messages Restored: RavenAscendant.</li>
+        <li><b>Modded Exes</b>: demonized and contributors (shader scaffold, map widget, DLTX, DXML).</li>
+        <li><b>Shader bus v8</b>: TheLostInPlace, xray-monolith PR 805.</li>
+        <li><b>Fonts</b>: JetBrains Mono, IBM Plex Sans (SIL OFL 1.1).</li>
+        <li><b>Line icons</b>: picked one by one from four open icon packs: Lucide 0.400.0 (ISC), Tabler Icons 3.19.0 (MIT), Phosphor Icons 2.1.1 (MIT) and Iconoir 7.9.0 (MIT). The other line icons are drawn for this project.</li>
+        <li><b>Pixel icons</b>: some picked one by one from the HackerNoon Pixel Icon Library 1.1.0 (CC BY 4.0), Pixelarticons 2.4.2 (MIT) and Pixicons 1.0.39 (MIT), redrawn on our 13 px grid. The other pixel icons are drawn for this project.</li>
+        <li><b>Clean item icons</b>: from GFY for Anomaly by Nestandart_5443 and from G.A.M.M.A. Icons.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="lead">Works with (read or called at run time, no code included):</p>
+      <p>iTheon (PDA Taskboard), lizzardman (Custom Taskboard, FDDA Redone), Serious (Tasks QoL Pack), Catspaw (Personal Adjustable Waypoint, New Extensible RF Sources), Utjan (Item UI Improvements, QoL Bundle), HarukaSai (Dynamic Icons Indicators), Redotix99, Andtheherois, party50 (3DSS), Priler (Toxic Air Redux, Ammo Check, Mags Reloaded Forked), Erandis (FART), INC, strangerism (Enhanced GUI talk window), CrookR (Identification UI), Ascii1457 (Screen Space Shaders), Meowie (Reworked Devices), Mich (Boomsticks and Sharpsticks), IndieSunpraiser and theRealBeef (Better Beef's NVGs), Tweaki_Breeki, G_FLAT, Godemis and Bling (AMP Armor Mag Pouches, Minimal SOTA+ Complete).</p>
+      <p class="lead">Full list, licences and provenance: <code>CREDITS.md</code> and <code>licenses/</code> in the zip.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
